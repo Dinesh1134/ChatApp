@@ -1,0 +1,103 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+.chat-container{
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  width: 75vw;
+  box-shadow: 0px 0px 128px 0px rgba(0, 0, 0, 0.1),
+              0px 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width:768px){
+  .chat-container{
+      width: 90vw;
+  }
+}
+
+.chat-container header{
+  background: #fff;
+  padding: 16px 0px;
+  text-align: center;
+}
+.chat-container header h2{
+  color: black;
+  font-size: 32px;
+  font-family: inter;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.header-txt{
+   color: #fa7878;
+}
+.chat-window{
+  background: #f7f7f7;
+  font-size: 18px;
+  font-family: roboto;
+  overflow: scroll;
+  height: 300px;
+  width: 100%;
+  padding: 15px 30px 70px;
+  box-shadow: inset 0 32px 32px -32px rgba(0 0 0 / 5%),
+              inset 0 -32px 32px -32px rgba(0 0 0 / 5%);
+}
+
+@media (max-width:768px) {
+  .chat-window{
+    font-size: 16px;
+  }
+}
+.chat-window {
+  overflow-x: auto; /* Enable vertical scrollbar */
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 8px;/* Set the width of the scrollbar */
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Set the border radius of the thumb */
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+  background-color: #909090; /* Set the color of the thumb on hover */
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the color of the scrollbar track */
+}
+.chat-input{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding: 18px 30px;
+  width: 100%;
+  background: #fff
+}
+.chat-input input{
+  width: 100%;
+  height: 45px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-family: inter;
+  font-weight: 500;
+}
+.send-button{
+  width: 55px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+.chat-input input::placeholder{
+  font-family: inter;
+  font-size: 16px;
+}
+
