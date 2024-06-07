@@ -78,7 +78,7 @@ To run the chatbot application locally, follow these steps:
 - WebSocket
 - Bootstrap
 
-## live deom for UI
+## Live demo for UI
 
 https://chatapplication-60029957276.development.catalystserverless.in/app/index.html
 
